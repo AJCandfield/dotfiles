@@ -1,9 +1,29 @@
+# Exclude everything by default
 /*
+
+# Include basic dot files at root level
 !/.gitignore
 !/.profile
 !/.bashrc
 !/.gitconfig
 !/.zshrc
+
+# Include SSH config
 !/.ssh
 /.ssh/*
 !/.ssh/config
+
+# Include .config/nvim/init.vim
+!/.config
+/.config/*
+!/.config/nvim
+/.config/nvim/*
+!/.config/nvim/init.vim
+
+# Include .vim/autoload/plug.vim
+!/.vim
+/.vim/*
+!/.vim/autoload
+/.vim/autoload/*
+!/.vim/autoload/plug.vim
+
