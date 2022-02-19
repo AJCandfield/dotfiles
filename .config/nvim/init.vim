@@ -1,22 +1,34 @@
-call plug#begin("~/.vim/plugged")
+" auto-install vim-plug
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall
+endif 
+
+call plug#begin('~/.config/nvim/plugged')
  " Plugin Section
- Plug 'dracula/vim'
- Plug 'ryanoasis/vim-devicons'
- Plug 'SirVer/ultisnips'
- Plug 'honza/vim-snippets'
- Plug 'scrooloose/nerdtree'
- Plug 'preservim/nerdcommenter'
- Plug 'mhinz/vim-startify'
- Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'mhinz/vim-startify'
+    Plug 'junegunn/vim-easy-align'
+    Plug 'SirVer/ultisnips'
+    Plug 'honza/vim-snippets'
+    Plug 'preservim/nerdtree'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
+    Plug 'preservim/nerdcommenter'
+    Plug 'dracula/vim'
 call plug#end()
+
+"NerdTree config section
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
 " color schemes
 if (has("termguicolors"))
  set termguicolors
 endif
+
 syntax enable
 "colorscheme evening
 colorscheme "dracula"
+
 "open new split panes to right and below
 set splitright
 set splitbelow
@@ -35,7 +47,7 @@ set shiftwidth=4            " width for autoindents
 set autoindent              " indent a new line the same amount as the line just typed
 set number                  " add line numbers
 set wildmode=longest,list   " get bash-like tab completions
-set cc=80                  " set an 80 column border for good coding style
+"set cc=80                  " set an 80 column border for good coding style
 filetype plugin indent on   "allow auto-indenting depending on file type
 syntax on                   " syntax highlighting
 set mouse=a                 " enable mouse click
