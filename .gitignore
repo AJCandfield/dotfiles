@@ -1,7 +1,9 @@
-*
-!.bashrc
-!.zshrc
-!.bash_logout
-!.gitignore
-!.profile
-!.gitconfig
+/*
+!/.gitignore
+!/.profile
+!/.bashrc
+!/.gitconfig
+!/.zshrc
+!/.ssh
+/.ssh/*
+!/.ssh/config
