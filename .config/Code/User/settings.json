@@ -1,0 +1,99 @@
+{
+  "editor.cursorSurroundingLines": 5,
+  "git.enableCommitSigning": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.indent": 24,
+  "editor.mouseWheelScrollSensitivity": 2,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs":"active",
+  "editor.dragAndDrop": false,
+  "editor.selectionClipboard": false,
+  "terminal.integrated.fontSize": 13,
+  "[python]": {
+    "editor.formatOnSave": true
+  },
+  "[ansible]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[terraform]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[packer]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[terragrunt]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[hcl]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "window.newWindowDimensions": "maximized",
+  "files.associations": {
+    "*.tfvars": "terraform",
+    "*.tf": "terraform"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "markdown.extension.toc.levels": "1..3",
+  "markdown.extension.toc.slugifyMode": "gitlab",
+  "editor.renderWhitespace": "trailing",
+  "spellright.language": [
+    "English (British)"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext"
+  ],
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.scrollback": 10000,
+  "editor.formatOnType": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "json.schemas": [],
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "git.suggestSmartCommit": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "editor.minimap.enabled": false,
+  "explorer.compactFolders": false
+}
