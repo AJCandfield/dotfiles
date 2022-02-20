@@ -27,3 +27,9 @@
 /.vim/autoload/*
 !/.vim/autoload/plug.vim
 
+# Include .config/Code/User/settings.json
+!/.config/Code
+/.config/Code/*
+!/.config/Code/User
+/.config/Code/User/*
+!/.config/Code/User/settings.json
