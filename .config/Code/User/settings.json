@@ -1,0 +1,86 @@
+{
+  "git.enableCommitSigning": true,
+  "git.suggestSmartCommit": false,
+  
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.indent": 24,
+  "workbench.list.smoothScrolling": true,
+  
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  
+  "editor.renderWhitespace": "trailing",
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.formatOnType": true,
+  "editor.suggestSelection": "first",
+  "editor.cursorSurroundingLines": 5,
+  "editor.mouseWheelScrollSensitivity": 2,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs":"active",
+  "editor.dragAndDrop": false,
+  "editor.selectionClipboard": false,
+
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+
+  "explorer.compactFolders": false,
+
+  "[python]": {
+    "editor.formatOnSave": true
+  },
+  "[ansible]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[terraform]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[packer]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[terragrunt]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[hcl]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  
+  "window.newWindowDimensions": "maximized",
+  
+  "files.associations": {
+    "*.tfvars": "terraform",
+    "*.tf": "terraform"
+  },
+  
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "markdown.extension.toc.levels": "1..3",
+  "markdown.extension.toc.slugifyMode": "gitlab",
+
+  "spellright.language": [
+    "English (British)"
+  ],
+
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext"
+  ],
+  
+  "json.schemas": [],
+  
+  "yaml.customTags": [],
+}
