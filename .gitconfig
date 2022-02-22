@@ -1,7 +1,10 @@
 [user]
 	email = alex.candfield@gmail.com
 	name = Alexander James Candfield
+	signingKey = D4B9A4E42B176B5E866B9F62250D04C3A870714E
 [tag]
 	forceSignAnnotated = true
 [core]
 	pager = less -F -X
+[commit]
+	gpgSign = true
