@@ -33,3 +33,8 @@
 !/.config/Code/User
 /.config/Code/User/*
 !/.config/Code/User/settings.json
+
+# Include .gnupg/gpg-agent.conf
+!/.gnupg
+/.gnupg/*
+!/.gnupg/gpg-agent.conf
