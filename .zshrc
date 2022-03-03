@@ -69,6 +69,7 @@ plugins=(
     aws 
     direnv 
     kubectl 
+    copyfile
     zsh-autosuggestions
 )
 
