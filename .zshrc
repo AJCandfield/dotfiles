@@ -64,7 +64,13 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aws direnv zsh-autosuggestions)
+plugins=(
+    git 
+    aws 
+    direnv 
+    kubectl 
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -124,5 +130,3 @@ export LESS_TERMCAP_so=$'\E[01;44;33m' # begin reverse video
 export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
-
-neofetch
