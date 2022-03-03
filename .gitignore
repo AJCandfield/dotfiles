@@ -13,9 +13,11 @@
 /.ssh/*
 !/.ssh/config
 
-# Include .config/nvim/init.vim
+# Include .config/
 !/.config
 /.config/*
+
+# Include .config/nvim/init.vim
 !/.config/nvim
 /.config/nvim/*
 !/.config/nvim/init.vim
@@ -38,3 +40,13 @@
 !/.gnupg
 /.gnupg/*
 !/.gnupg/gpg-agent.conf
+
+# Include .config/xfce4
+!/.config/xfce4
+
+# .local/share/xfce4
+!/.local/
+/.local/*
+!/.local/share/
+/.local/share/*
+!.local/share/xfce4
