@@ -23,6 +23,7 @@
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontFamily": "'DejaVu Sans Mono', 'PowerlineSymbols'",
 
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.codeLens.enabled": false,
