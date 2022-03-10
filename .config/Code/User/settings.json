@@ -84,4 +84,5 @@
   "json.schemas": [],
   
   "yaml.customTags": [],
+  "files.autoSave": "afterDelay",
 }
