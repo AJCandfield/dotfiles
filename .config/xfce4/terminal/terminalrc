@@ -35,4 +35,5 @@ MiscShowUnsafePasteDialog=TRUE
 TabActivityColor=#88C0D0
 FontName=Monospace 9
 ShortcutsNoHelpkey=TRUE
+ScrollingOnOutput=FALSE
 
