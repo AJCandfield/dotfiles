@@ -112,7 +112,7 @@ fi
 # Export aws-vault envars
 export AWS_VAULT_BACKEND="pass"  # Install pass package first
 export AWS_VAULT_PASS_PREFIX="aws-vault"
-export AWS_ASSUME_ROLE_TTL=4h
+export AWS_ASSUME_ROLE_TTL=1h
 export AWS_SESSION_TOKEN_TTL=4h
 eval "$(aws-vault --completion-script-zsh)"
 
