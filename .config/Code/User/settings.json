@@ -68,8 +68,7 @@
   "diffEditor.ignoreTrimWhitespace": false,
 
   "markdown-preview-enhanced.previewTheme": "github-light.css",
-  "markdown.extension.toc.levels": "1..3",
-  "markdown.extension.toc.slugifyMode": "gitlab",
+  "markdown.extension.toc.levels": "2..3",
 
   "spellright.language": [
     "English (British)"
@@ -84,4 +83,6 @@
   "json.schemas": [],
   
   "yaml.customTags": [],
+  "markdown.preview.doubleClickToSwitchToEditor": false,
+  "markdown.extension.print.theme": "dark",
 }
