@@ -85,4 +85,5 @@
   "yaml.customTags": [],
   "markdown.preview.doubleClickToSwitchToEditor": false,
   "markdown.extension.print.theme": "dark",
+  "redhat.telemetry.enabled": false,
 }
