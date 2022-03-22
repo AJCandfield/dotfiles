@@ -86,4 +86,6 @@
   "markdown.preview.doubleClickToSwitchToEditor": false,
   "markdown.extension.print.theme": "dark",
   "redhat.telemetry.enabled": false,
+  "workbench.colorTheme": "modulestf-dark",
+  "terraform.codelens.referenceCount": true,
 }
