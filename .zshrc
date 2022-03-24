@@ -112,7 +112,7 @@ fi
 # Export aws-vault envars
 export AWS_VAULT_BACKEND="pass"  # Install pass package first
 export AWS_VAULT_PASS_PREFIX="aws-vault"
-export AWS_ASSUME_ROLE_TTL=1h
+export AWS_ASSUME_ROLE_TTL=4h
 export AWS_SESSION_TOKEN_TTL=4h
 eval "$(aws-vault --completion-script-zsh)"
 
@@ -132,8 +132,6 @@ export LESS_TERMCAP_so=$'\E[01;44;33m' # begin reverse video
 export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
-
-
 
 
 # Leave as last command
