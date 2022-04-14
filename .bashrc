@@ -127,3 +127,4 @@ export PATH=$PATH:/usr/local/go/bin
 # Adding Bash History Formatting
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
+. "$HOME/.cargo/env"

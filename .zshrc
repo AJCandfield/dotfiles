@@ -109,6 +109,9 @@ if [ -d ~/.local/bin/ ]; then
     PATH=$PATH:~/.local/bin
 fi
 
+if [ -d ~/.cargo/ ]; then
+    source "$HOME/.cargo/env"
+fi
 [ -f .zsh/secrets ] && source .zsh/secrets
 
 # Export aws-vault envars
