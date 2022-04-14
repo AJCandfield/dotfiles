@@ -62,7 +62,8 @@
   
   "files.associations": {
     "*.tfvars": "terraform",
-    "*.tf": "terraform"
+    "*.tf": "terraform",
+    "*.hcl": "terraform"
   },
   
   "diffEditor.ignoreTrimWhitespace": false,
@@ -86,6 +87,5 @@
   "markdown.preview.doubleClickToSwitchToEditor": false,
   "markdown.extension.print.theme": "dark",
   "redhat.telemetry.enabled": false,
-  "workbench.colorTheme": "modulestf-dark",
   "terraform.codelens.referenceCount": true,
 }
