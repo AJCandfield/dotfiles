@@ -109,12 +109,16 @@ if [ -d ~/.local/bin/ ]; then
     PATH=$PATH:~/.local/bin
 fi
 
+[ -f .zsh/secrets ] && source .zsh/secrets
+
 # Export aws-vault envars
 export AWS_VAULT_BACKEND="pass"  # Install pass package first
 export AWS_VAULT_PASS_PREFIX="aws-vault"
 export AWS_ASSUME_ROLE_TTL=1h
 export AWS_SESSION_TOKEN_TTL=4h
 eval "$(aws-vault --completion-script-zsh)"
+
+export GITHUB_USER="ajcandfield"
 
 # HSTR configuration - add this to ~/.zshrc
 alias hh=hstr                    # hh to be alias for hstr
