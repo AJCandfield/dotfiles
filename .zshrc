@@ -110,32 +110,27 @@ export FZF_CTRL_T_COMMAND='fd --type f --hidden --exclude .git'
 # https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
-export TFENV_ARCH="amd64"
-export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
-export TF_LOG="INFO"
-export TF_LOG_PATH="./.terraform.log"
+# History settings
 setopt histignorespace           # skip cmds w/ leading space from history
 export SAVEHIST=100000
 export HISTFILE=~/.zsh_history
 
 export EDITOR="nvim"
-# Terraform stuff
+
+# Terraform settings
 export TFE_PARALLELISM="100"
-source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
-source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+export TFENV_ARCH="amd64"
+export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+export TF_LOG="INFO"
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-complete -o nospace -C /opt/homebrew/bin/terramate terramate
 
 # Created by `pipx` on 2025-02-14 19:51:34
 export PATH="$PATH:/Users/alex.candfield/.local/bin"
 eval "$(~/.local/bin/mise activate zsh)"
-export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
