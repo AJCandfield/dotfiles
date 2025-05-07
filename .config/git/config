@@ -1,0 +1,102 @@
+# =============================================================================
+# CORE
+# =============================================================================
+
+[user]
+  name = Alexander James Candfield
+
+[core]
+	editor = nvim
+  # Don't consider trailing space change as a cause for merge conflicts
+	whitespace = -trailing-space
+	pager = diff-so-fancy | less --tabs=4 -RF --pattern '^(Date|added|deleted|modified):'
+
+# =============================================================================
+# BASIC OPERATIONS
+# =============================================================================
+
+[pull]
+  rebase = false
+
+[push]
+	followTags = true
+	default = upstream
+
+[fetch]
+	prune = true
+
+[commit]
+  # Always sign commits with a GPG key.
+	gpgsign = true
+  template = ~/.config/git/commit-template
+
+[rebase]
+	autoStash = true
+
+[init]
+	defaultBranch = main
+
+[merge]
+  conflictstyle = diff3
+
+[credential]
+	helper = cache --timeout=86400
+
+[alias]
+	st = status
+
+[interactive]
+	diffFilter = diff-so-fancy --patch
+
+[diff]
+  # Use better, descriptive initials (c, i, w) instead of a/b.
+  mnemonicPrefix = true
+  # Show renames/moves as such
+  renames = true
+  colourMoved = default
+
+[tag]
+	# Sort tags as version numbers whenever applicable, so 1.10.2 is AFTER 1.2.0.
+	sort = version:refname
+	gpgsign = true
+  forceSignAnnotated = true
+
+[color]
+	ui = true
+
+[status]
+	short = true
+	branch = true
+	showStash = true
+	aheadBehind = true
+	verbose = true
+
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+# =============================================================================
+# INCLUDES
+# =============================================================================
+
+# We include configs specific to the type of projects we are working on.
+[includeIf "gitdir:~/.dotfiles/"]
+  path = ~/.config/git/personal
+
+[includeIf "gitdir:~/code/personal/"]
+  path = ~/.config/git/personal
+
+[includeIf "gitdir:~/code/idlayr/"]
+  path = ~/.config/git/idlayr
+

@@ -1,0 +1,10 @@
+# User details
+# - name: Needs to match with "Real Name" of the GPG key used.
+# - email: Needs to match with "Email address" of the GPG key used.
+# - signingkey: The ID of the GPG key to use to sign commits.
+#   Use `gpg --list-secret-keys --keyid-format=long` to retrieve it.
+
+[user]
+	email = alex.candfield@gmail.com
+	signingkey = 7D4EE8B58CECA9B3
+
