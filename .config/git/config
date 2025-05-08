@@ -87,6 +87,13 @@
 	new = green bold
 	whitespace = red reverse
 
+# Use aliases for working with remotes.
+# For example, the following two commands are equivalent thanks to the 'insteadOf' directive:
+# git clone ajcandfield.github.com:AJCandfield/nvim.git
+# git clone ajcandfield:nvim.git
+[url "ajcandfield.github.com:AJCandfield/"]
+	insteadOf = ajcandfield:
+
 # =============================================================================
 # INCLUDES
 # =============================================================================
