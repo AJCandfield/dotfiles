@@ -29,6 +29,7 @@
   # Always sign commits with a GPG key.
 	gpgsign = true
   template = ~/.config/git/commit-template
+  verbose = true
 
 [rebase]
 	autoStash = true
