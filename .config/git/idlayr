@@ -5,6 +5,6 @@
 #   Use `gpg --list-secret-keys --keyid-format=long` to retrieve it.
 
 [user]
-	email = alex.candfield@gmail.com
+	email = alex.candfield@tru.id
 	signingkey = 5163FB157F7BFD43!
 
