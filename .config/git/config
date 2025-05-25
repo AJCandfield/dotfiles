@@ -88,11 +88,16 @@
 	whitespace = red reverse
 
 # Use aliases for working with remotes.
-# For example, the following two commands are equivalent thanks to the 'insteadOf' directive:
+
 # git clone ajcandfield.github.com:AJCandfield/nvim.git
 # git clone ajcandfield:nvim.git
 [url "ajcandfield.github.com:AJCandfield/"]
 	insteadOf = ajcandfield:
+
+# git clone 4auth.gitlab.com:4auth/infrastructure/infra-terraform.git
+# git clone 4auth:infrastructure/infra-terraform.git
+[url "4auth.gitlab.com:4auth/"]
+	insteadOf = 4auth:
 
 # =============================================================================
 # INCLUDES
