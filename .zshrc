@@ -77,10 +77,10 @@ export EDITOR="nvim"
 export SUDO_EDITOR="nvim"
 
 # Terraform settings
-export TFE_PARALLELISM="100"
 export TFENV_ARCH="amd64"
-export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
-export TF_LOG="INFO"
+
+# export TF_LOG="INFO"
+
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
