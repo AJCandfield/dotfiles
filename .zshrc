@@ -81,6 +81,7 @@ export TFENV_ARCH="amd64"
 
 # export TF_LOG="INFO"
 
+export AWS_VAULT_BACKEND="pass"
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
