@@ -37,15 +37,15 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 plugins=(
-  git
-  fzf-tab
-  fzf
-  kube-ps1
-  docker
-  terraform
-  kind
   aws
   direnv
+  docker
+  fzf
+  fzf-tab
+  git
+  kind
+  kube-ps1
+  terraform
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
