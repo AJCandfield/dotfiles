@@ -33,16 +33,18 @@ HYPHEN_INSENSITIVE="true"
 zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
+
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 plugins=(
   git
   fzf-tab
-  kube-ps1
   fzf
+  kube-ps1
   docker
   terraform
   kind
+  aws
   direnv
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -96,5 +98,6 @@ export GPG_TTY=${TTY}
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+source <(glab completion -s zsh); compdef _glab glab
 eval "$(direnv hook zsh)"
 eval "$(ssh-agent)"
