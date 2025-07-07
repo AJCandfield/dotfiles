@@ -96,7 +96,7 @@
 
 # git clone 4auth.gitlab.com:4auth/infrastructure/infra-terraform.git
 # git clone 4auth:infrastructure/infra-terraform.git
-[url "4auth.gitlab.com:4auth/"]
+[url "4auth.gitlab.com:"]
 	insteadOf = 4auth:
 
 # =============================================================================

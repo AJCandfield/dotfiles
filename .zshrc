@@ -101,3 +101,4 @@ export GPG_TTY=${TTY}
 source <(glab completion -s zsh); compdef _glab glab
 eval "$(direnv hook zsh)"
 eval "$(ssh-agent)"
+eval "$(dive completion zsh)"
