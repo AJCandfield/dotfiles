@@ -9,7 +9,6 @@
 	editor = nvim
   # Don't consider trailing space change as a cause for merge conflicts
 	whitespace = -trailing-space
-	pager = diff-so-fancy | less --tabs=4 -RF --pattern '^(Date|added|deleted|modified):'
 
 # =============================================================================
 # BASIC OPERATIONS
@@ -28,7 +27,7 @@
 [commit]
   # Always sign commits with a GPG key.
 	gpgsign = true
-  template = ~/.config/git/commit-template
+  ; template = ~/.config/git/commit-template
   verbose = true
 
 [rebase]
@@ -44,7 +43,7 @@
 	helper = cache --timeout=86400
 
 [alias]
-	st = status
+  lg = "log --pretty=format:'%Cgreen%an%Creset %Cblue%ad%Creset %C(yellow)%h%Creset %s' --date=format:'%d %b %Y %H:%M'"
 
 [interactive]
 	diffFilter = diff-so-fancy --patch
@@ -98,6 +97,11 @@
 # git clone 4auth:infrastructure/infra-terraform.git
 [url "4auth.gitlab.com:"]
 	insteadOf = 4auth:
+
+# git clone tru-id.gitlab.com:tru-id/idlayr-sdk-ios.git
+# git clone tru-id:idlayr-sdk-ios.git
+[url "tru-id.gitlab.com:tru-id/"]
+	insteadOf = tru-id:
 
 # =============================================================================
 # INCLUDES
