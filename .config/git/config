@@ -89,17 +89,14 @@
 # Use aliases for working with remotes.
 
 # git clone ajcandfield.github.com:AJCandfield/nvim.git
-# git clone ajcandfield:nvim.git
 [url "ajcandfield.github.com:AJCandfield/"]
 	insteadOf = ajcandfield:
 
 # git clone 4auth.gitlab.com:4auth/infrastructure/infra-terraform.git
-# git clone 4auth:infrastructure/infra-terraform.git
 [url "4auth.gitlab.com:"]
 	insteadOf = 4auth:
 
 # git clone tru-id.gitlab.com:tru-id/idlayr-sdk-ios.git
-# git clone tru-id:idlayr-sdk-ios.git
 [url "tru-id.gitlab.com:tru-id/"]
 	insteadOf = tru-id:
 
