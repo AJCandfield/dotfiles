@@ -34,6 +34,7 @@ plugins=(
   docker
   git
   kube-ps1
+  terraform
   zsh-autosuggestions
   fzf-tab
   fast-syntax-highlighting
