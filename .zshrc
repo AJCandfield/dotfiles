@@ -67,7 +67,12 @@ fi
 
 # https://github.com/kurkale6ka/zsh/#fuzzy-cd-based-on-bookmarks
 chpwd_functions+=(update_marks)
-export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
+
+# Start ssh-agent if not already running
+# Only start ssh-agent if not running or if socket is missing
+if [ -z "$SSH_AGENT_PID" ] || ! kill -0 "$SSH_AGENT_PID" 2>/dev/null; then
+    eval "$(ssh-agent -s)"
+fi
 
 # Command to execute when pressing Ctrl-t
 export FZF_CTRL_T_COMMAND='fd --type f --hidden --exclude .git'
